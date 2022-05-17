@@ -1,22 +1,35 @@
 def dia_semana(dia):
 	match dia:
 		case 1:
-			return "Domingo"
+			print('Domingo')
 		case 2:
-			return "Segunda"
+			print('Segunda')
 		case 3:
-			return "Terça"
+			print('Terça')
 		case 4:
-			return "Quarta"
+			print('Quarta')
 		case 5:
-			return "Quinta"
+			print('Quinta')
 		case 6:
-			return "Sexta"
+			print('Sexta')
 		case 7:
-			return "Sabado"
+			print('Sábado')
 		case _:
+			print("Valor {} invalido".format(dia))
+
+def cor_favorita(cor):
+	match cor:
+		case 1:
+			return 'azul'
+		case 2:
+			return 'amarelo'
+		case 3:
 			return "Valor {} invalido".format(dia)
 
-print(dia_semana(1))
-print(dia_semana(3))
-print(dia_semana(23))
+if __name__ == '__main__':
+
+	escolha_dia = int(input('Escolha um número '))
+	dia_semana(escolha_dia)
+
+	escolha_cor = int(input('Escolha um numero de cor favorita: '))
+	print(cor_favorita(escolha_cor))
